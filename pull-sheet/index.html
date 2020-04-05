@@ -20,12 +20,12 @@ title: Update Spreadsheet
     // URL: https://[user/org].github.io/[repo]/pull-sheet/?key=your_key&worksheet=worksheet_name&token=your_personal_access_token&org=your_org&repo=your_repo&branch=your_branch
 
     // Incoming Variables append
+    var $key = getUrlVar('key');
+    var $resource = "Testy";
     var $oAuthToken = getUrlVar('token');
-    var $key = '1v2ChHdb3UhZVfgvdcvWqgxpTeYMPjwhGeJYewizJpAA';
-    var $resource = 'Testy';
-    var $org = 'mnich2020';
-    var $repo = 'covid-polska';
-    var $branch = 'master';
+    var $org = getUrlVar('org');
+    var $repo = getUrlVar('repo');
+    var $branch = getUrlVar('branch');
 
     var $yaml_store = "";
 
